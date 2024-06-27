@@ -46,7 +46,7 @@
 
 <div id="container">
 	<h1>
-		<a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC samples</a>
+		<a href="/" title="WebRTC samples homepage">WebRTC samples</a>
 		<span>Peer connection</span>
 	</h1>
 

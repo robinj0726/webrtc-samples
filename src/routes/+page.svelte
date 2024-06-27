@@ -126,88 +126,71 @@
 		<p class="description">Controlling peer connectivity</p>
 		<ul>
 			<li>
-				<a href="src/content/peerconnection/pc1/">Basic peer connection demo in a single tab</a>
+				<a href="/peerconnection/pc1/">Basic peer connection demo in a single tab</a>
 			</li>
 
 			<li>
-				<a href="src/content/peerconnection/channel/">Basic peer connection demo between two tabs</a
-				>
+				<a href="/peerconnection/channel/">Basic peer connection demo between two tabs</a>
 			</li>
 
 			<li>
-				<a href="src/content/peerconnection/perfect-negotiation/"
-					>Peer connection using Perfect Negotiation</a
-				>
+				<a href="/peerconnection/perfect-negotiation/">Peer connection using Perfect Negotiation</a>
 			</li>
 
-			<li><a href="src/content/peerconnection/audio/">Audio-only peer connection demo</a></li>
+			<li><a href="/peerconnection/audio/">Audio-only peer connection demo</a></li>
 
-			<li><a href="src/content/peerconnection/bandwidth/">Change bandwidth on the fly</a></li>
+			<li><a href="/peerconnection/bandwidth/">Change bandwidth on the fly</a></li>
 
-			<li><a href="src/content/peerconnection/change-codecs/">Change codecs before the call</a></li>
+			<li><a href="/peerconnection/change-codecs/">Change codecs before the call</a></li>
 
-			<li><a href="src/content/peerconnection/upgrade/">Upgrade a call and turn video on</a></li>
+			<li><a href="/peerconnection/upgrade/">Upgrade a call and turn video on</a></li>
 
-			<li><a href="src/content/peerconnection/multiple/">Multiple peer connections at once</a></li>
+			<li><a href="/peerconnection/multiple/">Multiple peer connections at once</a></li>
 
 			<li>
-				<a href="src/content/peerconnection/multiple-relay/"
-					>Forward the output of one PC into another</a
-				>
+				<a href="/peerconnection/multiple-relay/">Forward the output of one PC into another</a>
 			</li>
 
-			<li><a href="src/content/peerconnection/munge-sdp/">Munge SDP parameters</a></li>
+			<li><a href="/peerconnection/munge-sdp/">Munge SDP parameters</a></li>
 
 			<li>
-				<a href="src/content/peerconnection/pr-answer/"
-					>Use pranswer when setting up a peer connection</a
-				>
+				<a href="/peerconnection/pr-answer/">Use pranswer when setting up a peer connection</a>
 			</li>
 
-			<li><a href="src/content/peerconnection/constraints/">Constraints and stats</a></li>
+			<li><a href="/peerconnection/constraints/">Constraints and stats</a></li>
 
 			<li>
-				<a href="src/content/peerconnection/per-frame-callback/"
+				<a href="/peerconnection/per-frame-callback/"
 					>RTCPeerConnection and requestVideoFrameCallback()</a
 				>
 			</li>
 
 			<li>
-				<a href="src/content/peerconnection/create-offer/"
-					>Display createOffer output for various scenarios</a
-				>
+				<a href="/peerconnection/create-offer/">Display createOffer output for various scenarios</a>
 			</li>
 
-			<li><a href="src/content/peerconnection/dtmf/">Use RTCDTMFSender</a></li>
+			<li><a href="/peerconnection/dtmf/">Use RTCDTMFSender</a></li>
 
-			<li><a href="src/content/peerconnection/states/">Display peer connection states</a></li>
+			<li><a href="/peerconnection/states/">Display peer connection states</a></li>
 
 			<li>
-				<a href="src/content/peerconnection/trickle-ice/"
-					>ICE candidate gathering from STUN/TURN servers</a
-				>
+				<a href="/peerconnection/trickle-ice/">ICE candidate gathering from STUN/TURN servers</a>
 			</li>
 
-			<li><a href="src/content/peerconnection/restart-ice/">Do an ICE restart</a></li>
+			<li><a href="/peerconnection/restart-ice/">Do an ICE restart</a></li>
 
 			<li>
-				<a href="src/content/peerconnection/webaudio-input/"
-					>Web Audio output as input to peer connection</a
-				>
+				<a href="/peerconnection/webaudio-input/">Web Audio output as input to peer connection</a>
 			</li>
 
 			<li>
-				<a href="src/content/peerconnection/webaudio-output/"
-					>Peer connection as input to Web Audio</a
-				>
+				<a href="/peerconnection/webaudio-output/">Peer connection as input to Web Audio</a>
 			</li>
 			<li>
-				<a href="src/content/peerconnection/negotiate-timing/"
-					>Measure how long renegotiation takes</a
-				>
+				<a href="/peerconnection/negotiate-timing/">Measure how long renegotiation takes</a>
 			</li>
 			<li>
-				<a href="src/content/extensions/svc/"
+				<a href="/extensions/svc/"
 					>Choose scalablilityMode before call - Scalable Video Coding (SVC) Extension
 				</a>
 			</li>
