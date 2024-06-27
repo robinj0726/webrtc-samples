@@ -7,10 +7,14 @@
 	let localStream;
 	let pc1;
 	let pc2;
-	const offerOptions = {
-		offerToReceiveAudio: 1,
-		offerToReceiveVideo: 1
+
+	const CallStatus = {
+		STARTED: 'started',
+		INCALL: 'incall',
+		ENDED: 'ended'
 	};
+
+	let status = CallStatus.ENDED;
 
 	async function start() {
 		console.log('Requesting local stream');
@@ -19,14 +23,24 @@
 			console.log('Received local stream');
 			localVideo.srcObject = stream;
 			localStream = stream;
+			status = CallStatus.STARTED;
 		} catch (e) {
 			alert(`getUserMedia() error: ${e.name}`);
 		}
 	}
 
-	function call() {}
+	function call() {
+		status = CallStatus.INCALL;
+	}
 
-	function hangUp() {}
+	function hangUp() {
+		console.log('Ending call');
+		// pc1.close();
+		// pc2.close();
+		// pc1 = null;
+		// pc2 = null;
+		status = CallStatus.ENDED;
+	}
 </script>
 
 <div id="container">
@@ -50,9 +64,21 @@
 	</video>
 
 	<div class="box">
-		<button id="startButton" on:click={start}>Start</button>
-		<button id="callButton" on:click={call}>Call</button>
-		<button id="hangupButton" on:click={hangUp}>Hang Up</button>
+		<button
+			id="startButton"
+			on:click={start}
+			disabled={status === CallStatus.STARTED || status === CallStatus.INCALL}>Start</button
+		>
+		<button
+			id="callButton"
+			on:click={call}
+			disabled={status === CallStatus.INCALL || status === CallStatus.ENDED}>Call</button
+		>
+		<button
+			id="hangupButton"
+			on:click={hangUp}
+			disabled={status === CallStatus.ENDED || status === CallStatus.STARTED}>Hang Up</button
+		>
 	</div>
 
 	<p>
