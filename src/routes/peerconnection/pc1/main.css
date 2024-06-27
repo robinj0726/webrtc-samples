@@ -3,6 +3,10 @@ button {
 	width: 83px;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 button#hangupButton {
 	margin: 0;
 }

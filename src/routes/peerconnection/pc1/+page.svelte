@@ -1,47 +1,32 @@
 <script>
-	import { onDestroy } from 'svelte';
-	import { Client } from '$lib/client';
 	import './main.css';
 
-	let client = new Client();
-	client.onOpen = onOpen;
-	client.onClose = onClose;
+	let localVideo;
+	let remoteVideo;
 
-	client.onMessage = (message) => {
-		console.log('Received message:', message);
+	let localStream;
+	let pc1;
+	let pc2;
+	const offerOptions = {
+		offerToReceiveAudio: 1,
+		offerToReceiveVideo: 1
 	};
 
-	onDestroy(() => {
-		cleanUp();
-	});
-
-	function onOpen() {
-		console.log('Connected to server');
-	}
-
-	function onClose() {
-		console.log('Disconnected from server');
-		cleanUp();
-	}
-
-	function start() {
-		client.join('ws://localhost:3000/ws');
+	async function start() {
+		console.log('Requesting local stream');
+		try {
+			const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+			console.log('Received local stream');
+			localVideo.srcObject = stream;
+			localStream = stream;
+		} catch (e) {
+			alert(`getUserMedia() error: ${e.name}`);
+		}
 	}
 
 	function call() {}
 
-	function hangUp() {
-		if (client) {
-			client.leave();
-		}
-	}
-
-	function cleanUp() {
-		if (client) {
-			client.leave();
-			client = null;
-		}
-	}
+	function hangUp() {}
 </script>
 
 <div id="container">
@@ -57,10 +42,10 @@
 		>.
 	</p>
 
-	<video id="localVideo" playsinline autoplay muted>
+	<video bind:this={localVideo} id="localVideo" playsinline autoplay muted>
 		<track kind="captions" />
 	</video>
-	<video id="remoteVideo" playsinline autoplay>
+	<video bind:this={remoteVideo} id="remoteVideo" playsinline autoplay>
 		<track kind="captions" />
 	</video>
 
