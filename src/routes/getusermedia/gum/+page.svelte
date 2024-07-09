@@ -1,6 +1,6 @@
 <script>
 	let localVideo;
-	let errorMsg;
+	let errorMsg = '';
 
 	const constraints = {
 		video: true,
