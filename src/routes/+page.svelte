@@ -43,7 +43,7 @@
 		</h2>
 		<p class="description">Access media devices</p>
 		<ul>
-			<li><a href="src/content/getusermedia/gum/">Basic getUserMedia demo</a></li>
+			<li><a href="/getusermedia/gum/">Basic getUserMedia demo</a></li>
 
 			<li><a href="src/content/getusermedia/canvas/">Use getUserMedia with canvas</a></li>
 
