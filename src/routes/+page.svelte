@@ -48,32 +48,30 @@
 			<li><a href="/getusermedia/canvas/">Use getUserMedia with canvas</a></li>
 
 			<li>
-				<a href="src/content/getusermedia/filter/">Use getUserMedia with canvas and CSS filters</a>
+				<a href="/getusermedia/filter/">Use getUserMedia with canvas and CSS filters</a>
 			</li>
 
-			<li><a href="src/content/getusermedia/resolution/">Choose camera resolution</a></li>
+			<li><a href="/getusermedia/resolution/">Choose camera resolution</a></li>
 
 			<li>
-				<a href="src/content/getusermedia/audio/"
-					>Audio-only getUserMedia() output to local audio element</a
-				>
+				<a href="/getusermedia/audio/">Audio-only getUserMedia() output to local audio element</a>
 			</li>
 
 			<li>
-				<a href="src/content/getusermedia/volume/">Audio-only getUserMedia() displaying volume</a>
+				<a href="/getusermedia/volume/">Audio-only getUserMedia() displaying volume</a>
 			</li>
 
-			<li><a href="src/content/getusermedia/record/">Record stream</a></li>
+			<li><a href="/getusermedia/record/">Record stream</a></li>
 
 			<li>
-				<a href="src/content/getusermedia/getdisplaymedia/">Screensharing with getDisplayMedia</a>
+				<a href="/getusermedia/getdisplaymedia/">Screensharing with getDisplayMedia</a>
 			</li>
 
 			<li>
-				<a href="src/content/getusermedia/pan-tilt-zoom/">Control camera pan, tilt, and zoom</a>
+				<a href="/getusermedia/pan-tilt-zoom/">Control camera pan, tilt, and zoom</a>
 			</li>
 
-			<li><a href="src/content/getusermedia/exposure/">Control exposure</a></li>
+			<li><a href="/getusermedia/exposure/">Control exposure</a></li>
 		</ul>
 		<h2 id="devices">Devices:</h2>
 		<p class="description">Query media devices</p>
