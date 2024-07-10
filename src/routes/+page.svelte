@@ -45,7 +45,7 @@
 		<ul>
 			<li><a href="/getusermedia/gum/">Basic getUserMedia demo</a></li>
 
-			<li><a href="src/content/getusermedia/canvas/">Use getUserMedia with canvas</a></li>
+			<li><a href="/getusermedia/canvas/">Use getUserMedia with canvas</a></li>
 
 			<li>
 				<a href="src/content/getusermedia/filter/">Use getUserMedia with canvas and CSS filters</a>
